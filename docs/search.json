@@ -62,21 +62,21 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nYour academic background\nYour interest in data science\nYour career goals\nAny relevant experience or projects"
+    "text": "Hello! My name is Amanda Weller, and I am a Senior at Brigham Young University. I am majoring in Nursing with minors in Computer Science and Statistics. I have a passion for healthcare and technology, and I am excited to combine these fields in my future career."
   },
   {
     "objectID": "about.html#background",
     "href": "about.html#background",
     "title": "About Me",
     "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nYour academic background\nYour interest in data science\nYour career goals\nAny relevant experience or projects"
+    "text": "Hello! My name is Amanda Weller, and I am a Senior at Brigham Young University. I am majoring in Nursing with minors in Computer Science and Statistics. I have a passion for healthcare and technology, and I am excited to combine these fields in my future career."
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\n\n[Your Degree] - [University Name], [Year]\nRelevant Coursework: Statistics, Data Analysis, Programming, etc."
+    "text": "Education\n\nBrigham Young University (2021 - Dec 2026)\n\nBachelor of Science in Nursing\nMinor in Computer Science\nMinor in Statistics\n\nPeninsula College (2019 - 2021)\n\nAssoociate of Arts\n\nSequim High School (2017 - 2021)\n\nHigh School Diploma"
   },
   {
     "objectID": "about.html#skills-interests",
@@ -97,7 +97,7 @@
     "href": "about.html#contact",
     "title": "About Me",
     "section": "Contact",
-    "text": "Contact\n\nEmail: your.email@example.com\nGitHub: github.com/your-username\nLinkedIn: linkedin.com/in/your-profile\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
+    "text": "Contact\n\nEmail: azw22@byu.edu\nGitHub: github.com/your-username\nLinkedIn: linkedin.com/in/your-profile\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
   },
   {
     "objectID": "projects/data-acquisition.html",
@@ -118,5 +118,33 @@
     "crumbs": [
       "Final Project"
     ]
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About Me",
+    "section": "About Me",
+    "text": "About Me\nHello! My name is Amanda Weller, and I am a Senior at Brigham Young University. I am majoring in Nursing with minors in Computer Science and Statistics. I have a passion for healthcare and technology, and I am excited to combine these fields in my future career."
+  },
+  {
+    "objectID": "about.html#education-1",
+    "href": "about.html#education-1",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nBrigham Young University (2021 - Dec 2026)\n\nBachelor of Science in Nursing\nMinor in Computer Science\nMinor in Statistics\n\nPeninsula College (2019 - 2021)\n\nAssoociate of Arts\n\nSequim High School (2017 - 2021)\n\nHigh School Diploma"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\n\nWeb Development Team Lead and Project Manager (Jul 2025 – present) College of Family, Home, and Social Sciences\n\nManaged a team of developers to create and maintain websites for the college, coordinated project timelines, and ensured quality control.\n\nClinical Rotations (Jan 2024– Present) Brigham Young University Nursing Program\n\nPerformed and documented patient vitals and assessments in the EMR across multiple clinical units, assisted with basic nursing care, and upheld patient safety and infection control standards.\n\nServer (Mar 2021 – Dec 2025) Magleby’s and 101 Diner\n\nManaged up to 10 tables, accurately took and delivered food and drink orders, and provided efficient, friendly customer service in a fast-paced environment.\n\nVolunteer Technician (Sep 2021 – Apr 2022) Primary Children’s Hospital\n\nFacilitated surgical check-ins for families, supervised pediatric care in a safe environment, and assisted Child Life Specialists to support patient-centered care.\n\nMath Tutor (Jul 2020 – Jul 2021) Peninsula College Tutoring Center\n\nProvided individualized math support to students and led focused group sessions to strengthen understanding of key mathematical concepts.\n\nSterilization Technician (Jun 2019 – Feb 2020) Advanta Dental\n\nSterilized dental instruments, maintained supply inventory, and upheld sanitation protocols to ensure a safe and efficient clinical environment."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\nProficient in Python, Java, and C++\nData analysis using statistical software (R, SPSS)\n\nCPR Certified\nBLS Certified\nProficient in Electronic Medical Records (EMR) systems"
   }
 ]
