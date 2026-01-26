@@ -2,7 +2,7 @@
 title: "About Me"
 ---
 
-[Portrait of Amanda Weller on Ferris Wheel in Brussels Belgium](docs/Photo.HEIC)
+![Portrait of Amanda Weller on Ferris Wheel in Brussels Belgium](docs/Photo.HEIC)
 
 ## Background
 
