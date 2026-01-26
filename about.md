@@ -2,9 +2,16 @@
 title: "About Me"
 ---
 
+[Portrait of Amanda Weller on Ferris Wheel in Brussels Belgium](docs/Photo.HEIC)
+
 ## Background
 
-Hello! My name is Amanda Weller, and I am a Senior at Brigham Young University. I am majoring in Nursing with minors in Computer Science and Statistics. I have a passion for healthcare and technology, and I am excited to combine these fields in my future career. 
+Hello! My name is Amanda Weller, and I am a Senior at Brigham Young University. I am majoring in Nursing with minors in Computer Science and Statistics. I have a passion for healthcare and technology, and I am excited to combine these fields in my future career. I am wanting to spend some time working in the Emergency Room as a nurse before looking into opportunities in healthcare data science.
+
+## Get to Know Me 
+- **Hometown**: Sequim, Washington
+- **Hobbies**: Hiking, baking, snowboarding, traveling, and watching BYU sports games.
+- **Fun Fact**: I am a certified scuba diver and love being in the water! 
 
 ## Education
 - **Brigham Young University** (2021 - Dec 2026)
@@ -15,6 +22,7 @@ Hello! My name is Amanda Weller, and I am a Senior at Brigham Young University. 
     - Assoociate of Arts
 - **Sequim High School** (2017 - 2021)
     - High School Diploma
+
 ## Experience
 - **Web Development Team Lead and Project Manager** (Jul 2025 -- present) *College of Family, Home, and Social Sciences*
     - Managed a team of developers to create and maintain websites for the college, coordinated project timelines, and ensured quality control.
