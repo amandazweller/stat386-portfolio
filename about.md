@@ -53,4 +53,5 @@ Hello! My name is Amanda Weller, and I am a Senior at Brigham Young University. 
 - **GitHub**: [github.com/amandazweller](https://github.com/amandazweller)
 - **LinkedIn**: [linkedin.com/in/amandazwelelr](https://linkedin.com/in/amandazweller)
 
+
 *This portfolio showcases my learning progress and projects completed during my data science studies.*
