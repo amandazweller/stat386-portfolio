@@ -2,7 +2,7 @@
 title: "About Me"
 ---
 
-![Portrait of Amanda Weller on Ferris Wheel in Brussels Belgium](docs/Photo.jpg)
+![Portrait of Amanda Weller on Ferris Wheel in Brussels Belgium](docs/Photo.HEIC)
 
 ## Background
 
@@ -52,6 +52,5 @@ Hello! My name is Amanda Weller, and I am a Senior at Brigham Young University. 
 - **Email**: azw22@byu.edu
 - **GitHub**: [github.com/amandazweller](https://github.com/amandazweller)
 - **LinkedIn**: [linkedin.com/in/amandazwelelr](https://linkedin.com/in/amandazweller)
-
 
 *This portfolio showcases my learning progress and projects completed during my data science studies.*
