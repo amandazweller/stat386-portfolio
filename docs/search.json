@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you’ll find projects that demonstrate what I’ve learned and discovered.\n\n\nThis portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\n\n\n\nLearn how to make interactive charts using Plotly in Python.\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+  },
+  {
+    "objectID": "index.html#about-this-portfolio",
+    "href": "index.html#about-this-portfolio",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "This portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages."
+  },
+  {
+    "objectID": "index.html#skills-im-learning",
+    "href": "index.html#skills-im-learning",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Programming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
+  },
+  {
+    "objectID": "index.html#my-projects",
+    "href": "index.html#my-projects",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Learn how to make interactive charts using Plotly in Python.\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "",
+    "text": "If you’ve been using matplotlib or seaborn for your data visualization, you already know the basics — but those libraries produce static images. You can’t hover to inspect a data point, zoom into a cluster, or toggle categories on and off without writing a lot of extra code.\nPlotly Express changes that. It’s a high-level Python library that wraps Plotly’s powerful graphing engine behind a simple, pandas-friendly API. The result: interactive charts that are ready to embed on a website or share as HTML files, with almost no extra effort.\nIn this tutorial, you’ll learn how to:\n\nInstall Plotly and load a dataset\nBuild an interactive scatter plot with color, bubble size, and hover tooltips\nAnimate your chart across time with a single argument\nCreate a line chart to compare trends across groups\nSave and embed an interactive chart in your GitHub Pages blog post"
+  },
+  {
+    "objectID": "blog.html#why-plotly",
+    "href": "blog.html#why-plotly",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "",
+    "text": "If you’ve been using matplotlib or seaborn for your data visualization, you already know the basics — but those libraries produce static images. You can’t hover to inspect a data point, zoom into a cluster, or toggle categories on and off without writing a lot of extra code.\nPlotly Express changes that. It’s a high-level Python library that wraps Plotly’s powerful graphing engine behind a simple, pandas-friendly API. The result: interactive charts that are ready to embed on a website or share as HTML files, with almost no extra effort.\nIn this tutorial, you’ll learn how to:\n\nInstall Plotly and load a dataset\nBuild an interactive scatter plot with color, bubble size, and hover tooltips\nAnimate your chart across time with a single argument\nCreate a line chart to compare trends across groups\nSave and embed an interactive chart in your GitHub Pages blog post"
+  },
+  {
+    "objectID": "blog.html#installation-and-setup",
+    "href": "blog.html#installation-and-setup",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Installation and Setup",
+    "text": "Installation and Setup\n# terminal\npip install plotly\nThat’s it. No extra configuration. We’ll use Plotly’s built-in gapminder dataset so you can follow along without downloading anything:\n# Python\nimport plotly.express as px\n\ndf = px.data.gapminder()\nprint(df.head())\nThis dataset has GDP per capita, life expectancy, and population for countries worldwide from 1952 to 2007 — perfect for showing off what Plotly can do."
+  },
+  {
+    "objectID": "blog.html#creating-charts",
+    "href": "blog.html#creating-charts",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Creating Charts",
+    "text": "Creating Charts\n\nYour First Chart (and Why It’s Already Better)\nLet’s start with a simple scatter plot of GDP per capita vs. life expectancy for 2007:\n# Python\nfig = px.scatter(\n    df[df[\"year\"] == 2007],\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    title=\"GDP vs. Life Expectancy (2007)\"\n)\n\nfig.show()\nThree lines. Same result as matplotlib — except now you can hover over any point to see its exact values, scroll to zoom, and click-drag to pan. No extra code.\n\n\n\n\nAdding Visual Layers\nHere’s where Plotly starts to pull ahead. Adding color, size, and hover labels is just a matter of extra arguments — and each one adds meaningful interactivity automatically.\n# Python\nfig = px.scatter(\n    df[df[\"year\"] == 2007],\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",       # color-coded by continent\n    size=\"pop\",              # bubble size = population\n    hover_name=\"country\",    # country name appears on hover\n    log_x=True,              # log scale tames the GDP spread\n    title=\"GDP vs. Life Expectancy (2007)\",\n    labels={\n        \"gdpPercap\": \"GDP per Capita (USD)\",\n        \"lifeExp\": \"Life Expectancy (years)\"\n    }\n)\n\nfig.show()\n\n\nNow try clicking Africa in the legend — it removes it from the graph entirely. Double-click a continent to isolate it. Hover over the largest bubble in Asia to confirm it’s China. All of that interactivity comes for free.\nHere’s what each new argument is doing:\n\n\n\n\n\n\n\n\nArgument\nWhat it does\nWhy it’s useful\n\n\n\n\ncolor=\"continent\"\nAssigns a unique color per category\nTurns the legend into an interactive filter\n\n\nsize=\"pop\"\nScales bubble area by population\nAdds a third data dimension visually\n\n\nhover_name=\"country\"\nPins country name to the tooltip\nInstantly identifies any outlier\n\n\nlog_x=True\nLog scale on the x-axis\nSpreads out low-GDP countries that get squished\n\n\nlabels={...}\nRenames axes from column names\nMakes the chart readable without editing raw data\n\n\n\n\n\nAnimating Over Time\nThis is the feature that tends to get a reaction. Plotly can animate your chart across a column — like year — with a single argument:\n# Python\nfig = px.scatter(\n    df,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",\n    size=\"pop\",\n    hover_name=\"country\",\n    animation_frame=\"year\",    # adds a play button + year slider\n    animation_group=\"country\", # tracks each country between frames\n    log_x=True,\n    range_x=[200, 100000],     # fix axis range so it doesn't rescale\n    range_y=[25, 90],\n    title=\"GDP vs. Life Expectancy Over Time\"\n)\n\nfig.show()\n\n\nHit Play and watch 55 years of global development unfold. The animation_group argument tells Plotly which dots to track between frames so countries transition smoothly rather than jumping around.\n\nNote: Always fix range_x and range_y when animating — otherwise the axes rescale each frame, which makes trends hard to read.\n\n\n\nLine Charts: Trends Over Time\nAnimations are great for exploration, but for a written report you’ll often want a cleaner time series. Here’s how to compare life expectancy trajectories across a few countries:\n# Python\ncountries = [\"United States\", \"China\", \"India\", \"Brazil\", \"Nigeria\"]\n\nfig = px.line(\n    df[df[\"country\"].isin(countries)],\n    x=\"year\",\n    y=\"lifeExp\",\n    color=\"country\",\n    markers=True,\n    title=\"Life Expectancy Over Time (Selected Countries)\",\n    labels={\"lifeExp\": \"Life Expectancy (years)\", \"year\": \"Year\"}\n)\n\nfig.show()\nmarkers=True adds a dot at each data point you can hover over individually. Click any country in the legend to hide it — useful when you want to isolate a specific comparison."
+  },
+  {
+    "objectID": "blog.html#saving-and-sharing-your-charts",
+    "href": "blog.html#saving-and-sharing-your-charts",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Saving and Sharing Your Charts",
+    "text": "Saving and Sharing Your Charts\nPlotly charts are HTML objects under the hood, which makes them easy to share in several ways depending on your needs.\nSave as an HTML file — anyone can open it in a browser, no Python required:\n# Python\nfig.write_html(\"life_expectancy.html\")\nSave as a static image — useful for reports, slides, or anywhere you just need a PNG or PDF:\n# Python\nfig.write_image(\"life_expectancy.png\")  # also supports .pdf, .svg, .jpeg\n\nNote: write_image() requires the kaleido package (pip install kaleido).\n\nShare interactively online — if you want a shareable link without any setup, Plotly Chart Studio lets you upload and share charts for free.\nEmbed in a website — save the chart as an .html file and embed it using an iframe:\n&lt;!-- HTML --&gt;\n&lt;iframe\n  src=\"/life_expectancy.html\"\n  width=\"100%\"\n  height=\"500px\"\n  style=\"border:none;\"&gt;\n&lt;/iframe&gt;\nNo matter which route you take (except saving it as a static image), the chart stays fully interactive — hover, zoom, and filtering all work anywhere it’s displayed."
+  },
+  {
+    "objectID": "blog.html#plotly-express-at-a-glance",
+    "href": "blog.html#plotly-express-at-a-glance",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Plotly Express at a Glance",
+    "text": "Plotly Express at a Glance\nOnce you know the pattern — px.chart_type(df, x=, y=, color=, ...) — the rest of the library follows the same logic. Here are the most useful chart types to know:\n\n\n\n\n\n\n\n\nChart Type\nFunction\nBest For\n\n\n\n\nScatter\npx.scatter()\nRelationships between two numeric variables\n\n\nLine\npx.line()\nTrends over time\n\n\nBar\npx.bar()\nComparing categories\n\n\nHistogram\npx.histogram()\nDistribution of a single variable\n\n\nBox\npx.box()\nSpread and outliers by group\n\n\nChoropleth\npx.choropleth()\nGeographic data mapped by country or region"
+  },
+  {
+    "objectID": "blog.html#conclusion-and-next-steps",
+    "href": "blog.html#conclusion-and-next-steps",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Conclusion and Next Steps",
+    "text": "Conclusion and Next Steps\nIf you already know pandas, Plotly Express will feel natural within minutes. The core payoff is that interactivity — hover, zoom, filter, animate — is built in from the start, so you spend less time fighting your visualization library and more time actually exploring your data.\nHere’s what to try next:\n\nRun these examples on your own dataset. Swap df for any pandas DataFrame — the API is identical.\nTry px.choropleth() if your data has a country or state column. Geographic interactivity is just as easy as everything above.\nExplore plotly.graph_objects when you need finer control — custom annotations, multi-axis layouts, or combining chart types on one figure.\nEmbed a chart in your portfolio. An interactive visualization tells a better story than a screenshot, and it immediately signals to a reader that you can both analyze and communicate data.\n\nThe Plotly Express documentation has a full gallery of examples — every one is runnable and easy to adapt to your own work."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "Background",
+    "text": "Background\nHello! My name is Amanda Weller, and I am a Senior at Brigham Young University. I am majoring in Nursing with minors in Computer Science and Statistics. I have a passion for healthcare and technology, and I am excited to combine these fields in my future career. I am wanting to spend some time working in the Emergency Room as a nurse before looking into opportunities in healthcare data science."
+  },
+  {
+    "objectID": "about.html#get-to-know-me",
+    "href": "about.html#get-to-know-me",
+    "title": "About Me",
+    "section": "Get to Know Me",
+    "text": "Get to Know Me\n\nHometown: Sequim, Washington\nHobbies: Hiking, baking, snowboarding, traveling, and watching BYU sports games.\nFun Fact: I am a certified scuba diver and love being in the water!"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nBrigham Young University (2021 - Dec 2026)\n\nBachelor of Science in Nursing\nMinor in Computer Science\nMinor in Statistics\n\nPeninsula College (2019 - 2021)\n\nAssoociate of Arts\n\nSequim High School (2017 - 2021)\n\nHigh School Diploma"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\n\nWeb Development Team Lead and Project Manager (Jul 2025 – present) College of Family, Home, and Social Sciences\n\nManaged a team of developers to create and maintain websites for the college, coordinated project timelines, and ensured quality control.\n\nClinical Rotations (Jan 2024– Present) Brigham Young University Nursing Program\n\nPerformed and documented patient vitals and assessments in the EMR across multiple clinical units, assisted with basic nursing care, and upheld patient safety and infection control standards.\n\nVolunteer Technician (Sep 2021 – Apr 2022) Primary Children’s Hospital\n\nFacilitated surgical check-ins for families, supervised pediatric care in a safe environment, and assisted Child Life Specialists to support patient-centered care.\n\nMath Tutor (Jul 2020 – Jul 2021) Peninsula College Tutoring Center\n\nProvided individualized math support to students and led focused group sessions to strengthen understanding of key mathematical concepts.\n\nSterilization Technician (Jun 2019 – Feb 2020) Advanta Dental\n\nSterilized dental instruments, maintained supply inventory, and upheld sanitation protocols to ensure a safe and efficient clinical environment."
+  },
+  {
+    "objectID": "about.html#skills-interests",
+    "href": "about.html#skills-interests",
+    "title": "About Me",
+    "section": "Skills & Interests",
+    "text": "Skills & Interests\n\nTechnical Skills\n\nProgramming: Python, Java, C++\nData Analysis: Pandas, NumPy, R\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub\n\n\n\nAreas of Interest\n\nHealthcare Analytics\nMachine Learning in Medicine"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "Contact",
+    "text": "Contact\n\nEmail: azw22@byu.edu\nGitHub: github.com/amandazweller\nLinkedIn: linkedin.com/in/amandazwelelr\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
+  }
+]
