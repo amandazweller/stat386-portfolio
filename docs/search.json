@@ -47,5 +47,33 @@
     "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
     "section": "Conclusion and Next Steps",
     "text": "Conclusion and Next Steps\nIf you already know pandas, Plotly Express will feel natural within minutes. The core payoff is that interactivity — hover, zoom, filter, animate — is built in from the start, so you spend less time fighting your visualization library and more time actually exploring your data.\nHere’s what to try next:\n\nRun these examples on your own dataset. Swap df for any pandas DataFrame — the API is identical.\nTry px.choropleth() if your data has a country or state column. Geographic interactivity is just as easy as everything above.\nExplore plotly.graph_objects when you need finer control — custom annotations, multi-axis layouts, or combining chart types on one figure.\nEmbed a chart in your portfolio. An interactive visualization tells a better story than a screenshot, and it immediately signals to a reader that you can both analyze and communicate data.\n\nThe Plotly Express documentation has a full gallery of examples — every one is runnable and easy to adapt to your own work."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you’ll find projects that demonstrate what I’ve learned and discovered.\n\n\nThis portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+  },
+  {
+    "objectID": "index.html#about-this-portfolio",
+    "href": "index.html#about-this-portfolio",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "This portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages."
+  },
+  {
+    "objectID": "index.html#skills-im-learning",
+    "href": "index.html#skills-im-learning",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Programming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
+  },
+  {
+    "objectID": "index.html#my-projects",
+    "href": "index.html#my-projects",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
   }
 ]
