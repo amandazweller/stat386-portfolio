@@ -191,10 +191,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#why-plotly" id="toc-why-plotly" class="nav-link active" data-scroll-target="#why-plotly">Why Plotly?</a></li>
   <li><a href="#installation-and-setup" id="toc-installation-and-setup" class="nav-link" data-scroll-target="#installation-and-setup">Installation and Setup</a></li>
+  <li><a href="#creating-charts" id="toc-creating-charts" class="nav-link" data-scroll-target="#creating-charts">Creating Charts</a>
+  <ul class="collapse">
   <li><a href="#your-first-chart-and-why-its-already-better" id="toc-your-first-chart-and-why-its-already-better" class="nav-link" data-scroll-target="#your-first-chart-and-why-its-already-better">Your First Chart (and Why It’s Already Better)</a></li>
   <li><a href="#adding-visual-layers" id="toc-adding-visual-layers" class="nav-link" data-scroll-target="#adding-visual-layers">Adding Visual Layers</a></li>
   <li><a href="#animating-over-time" id="toc-animating-over-time" class="nav-link" data-scroll-target="#animating-over-time">Animating Over Time</a></li>
   <li><a href="#line-charts-trends-over-time" id="toc-line-charts-trends-over-time" class="nav-link" data-scroll-target="#line-charts-trends-over-time">Line Charts: Trends Over Time</a></li>
+  </ul></li>
   <li><a href="#saving-and-sharing-your-charts" id="toc-saving-and-sharing-your-charts" class="nav-link" data-scroll-target="#saving-and-sharing-your-charts">Saving and Sharing Your Charts</a></li>
   <li><a href="#plotly-express-at-a-glance" id="toc-plotly-express-at-a-glance" class="nav-link" data-scroll-target="#plotly-express-at-a-glance">Plotly Express at a Glance</a></li>
   <li><a href="#conclusion-and-next-steps" id="toc-conclusion-and-next-steps" class="nav-link" data-scroll-target="#conclusion-and-next-steps">Conclusion and Next Steps</a></li>
@@ -249,8 +252,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This dataset has GDP per capita, life expectancy, and population for countries worldwide from 1952 to 2007 — perfect for showing off what Plotly can do.</p>
 </section>
-<section id="your-first-chart-and-why-its-already-better" class="level2">
-<h2 class="anchored" data-anchor-id="your-first-chart-and-why-its-already-better">Your First Chart (and Why It’s Already Better)</h2>
+<section id="creating-charts" class="level2">
+<h2 class="anchored" data-anchor-id="creating-charts">Creating Charts</h2>
+<section id="your-first-chart-and-why-its-already-better" class="level3">
+<h3 class="anchored" data-anchor-id="your-first-chart-and-why-its-already-better">Your First Chart (and Why It’s Already Better)</h3>
 <p>Let’s start with a simple scatter plot of GDP per capita vs.&nbsp;life expectancy for 2007:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Python</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.scatter(</span>
@@ -265,8 +270,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <iframe src="./assets/scatter_basic.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </section>
-<section id="adding-visual-layers" class="level2">
-<h2 class="anchored" data-anchor-id="adding-visual-layers">Adding Visual Layers</h2>
+<section id="adding-visual-layers" class="level3">
+<h3 class="anchored" data-anchor-id="adding-visual-layers">Adding Visual Layers</h3>
 <p>Here’s where Plotly starts to pull ahead. Adding color, size, and hover labels is just a matter of extra arguments — and each one adds meaningful interactivity automatically.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Python</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.scatter(</span>
@@ -331,8 +336,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </section>
-<section id="animating-over-time" class="level2">
-<h2 class="anchored" data-anchor-id="animating-over-time">Animating Over Time</h2>
+<section id="animating-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="animating-over-time">Animating Over Time</h3>
 <p>This is the feature that tends to get a reaction. Plotly can animate your chart across a column — like <code>year</code> — with a single argument:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Python</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.scatter(</span>
@@ -358,8 +363,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Note:</strong> Always fix <code>range_x</code> and <code>range_y</code> when animating — otherwise the axes rescale each frame, which makes trends hard to read.</p>
 </blockquote>
 </section>
-<section id="line-charts-trends-over-time" class="level2">
-<h2 class="anchored" data-anchor-id="line-charts-trends-over-time">Line Charts: Trends Over Time</h2>
+<section id="line-charts-trends-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="line-charts-trends-over-time">Line Charts: Trends Over Time</h3>
 <p>Animations are great for exploration, but for a written report you’ll often want a cleaner time series. Here’s how to compare life expectancy trajectories across a few countries:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Python</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>countries <span class="op">=</span> [<span class="st">"United States"</span>, <span class="st">"China"</span>, <span class="st">"India"</span>, <span class="st">"Brazil"</span>, <span class="st">"Nigeria"</span>]</span>
@@ -378,6 +383,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><code>markers=True</code> adds a dot at each data point you can hover over individually. Click any country in the legend to hide it — useful when you want to isolate a specific comparison.</p>
 <iframe src="./assets/line_chart.html" width="100%" height="500px" style="border:none;">
 </iframe>
+</section>
 </section>
 <section id="saving-and-sharing-your-charts" class="level2">
 <h2 class="anchored" data-anchor-id="saving-and-sharing-your-charts">Saving and Sharing Your Charts</h2>
@@ -962,8 +968,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>This dataset has GDP per capita, life expectancy, and population for countries worldwide from 1952 to 2007 — perfect for showing off what Plotly can do.</span>
 <span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Your First Chart (and Why It's Already Better)</span></span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creating Charts</span></span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a><span class="fu">### Your First Chart (and Why It's Already Better)</span></span>
 <span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>Let's start with a simple scatter plot of GDP per capita vs. life expectancy for 2007:</span>
 <span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a></span>
@@ -989,7 +995,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-66"><a href="#cb10-66" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">iframe</span><span class="dt">&gt;</span></span>
 <span id="cb10-67"><a href="#cb10-67" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adding Visual Layers</span></span>
+<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a><span class="fu">### Adding Visual Layers</span></span>
 <span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a>Here's where Plotly starts to pull ahead. Adding color, size, and hover labels is just a matter of extra arguments — and each one adds meaningful interactivity automatically.</span>
 <span id="cb10-72"><a href="#cb10-72" aria-hidden="true" tabindex="-1"></a></span>
@@ -1032,7 +1038,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-109"><a href="#cb10-109" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`log_x=True`</span> <span class="pp">|</span> Log scale on the x-axis <span class="pp">|</span> Spreads out low-GDP countries that get squished <span class="pp">|</span></span>
 <span id="cb10-110"><a href="#cb10-110" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`labels={...}`</span> <span class="pp">|</span> Renames axes from column names <span class="pp">|</span> Makes the chart readable without editing raw data <span class="pp">|</span></span>
 <span id="cb10-111"><a href="#cb10-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-112"><a href="#cb10-112" aria-hidden="true" tabindex="-1"></a><span class="fu">## Animating Over Time</span></span>
+<span id="cb10-112"><a href="#cb10-112" aria-hidden="true" tabindex="-1"></a><span class="fu">### Animating Over Time</span></span>
 <span id="cb10-113"><a href="#cb10-113" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-114"><a href="#cb10-114" aria-hidden="true" tabindex="-1"></a>This is the feature that tends to get a reaction. Plotly can animate your chart across a column — like <span class="in">`year`</span> — with a single argument:</span>
 <span id="cb10-115"><a href="#cb10-115" aria-hidden="true" tabindex="-1"></a></span>
@@ -1067,7 +1073,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-144"><a href="#cb10-144" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **Note:** Always fix </span><span class="in">`range_x`</span><span class="at"> and </span><span class="in">`range_y`</span><span class="at"> when animating — otherwise the axes rescale each frame, which makes trends hard to read.</span></span>
 <span id="cb10-145"><a href="#cb10-145" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-146"><a href="#cb10-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-147"><a href="#cb10-147" aria-hidden="true" tabindex="-1"></a><span class="fu">## Line Charts: Trends Over Time</span></span>
+<span id="cb10-147"><a href="#cb10-147" aria-hidden="true" tabindex="-1"></a><span class="fu">### Line Charts: Trends Over Time</span></span>
 <span id="cb10-148"><a href="#cb10-148" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-149"><a href="#cb10-149" aria-hidden="true" tabindex="-1"></a>Animations are great for exploration, but for a written report you'll often want a cleaner time series. Here's how to compare life expectancy trajectories across a few countries:</span>
 <span id="cb10-150"><a href="#cb10-150" aria-hidden="true" tabindex="-1"></a></span>

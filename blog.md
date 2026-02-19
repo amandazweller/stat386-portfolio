@@ -39,8 +39,8 @@ print(df.head())
 
 This dataset has GDP per capita, life expectancy, and population for countries worldwide from 1952 to 2007 — perfect for showing off what Plotly can do.
 
-
-## Your First Chart (and Why It's Already Better)
+## Creating Charts
+### Your First Chart (and Why It's Already Better)
 
 Let's start with a simple scatter plot of GDP per capita vs. life expectancy for 2007:
 
@@ -66,7 +66,7 @@ Three lines. Same result as matplotlib — except now you can hover over any poi
 </iframe>
 
 
-## Adding Visual Layers
+### Adding Visual Layers
 
 Here's where Plotly starts to pull ahead. Adding color, size, and hover labels is just a matter of extra arguments — and each one adds meaningful interactivity automatically.
 
@@ -109,7 +109,7 @@ Here's what each new argument is doing:
 | `log_x=True` | Log scale on the x-axis | Spreads out low-GDP countries that get squished |
 | `labels={...}` | Renames axes from column names | Makes the chart readable without editing raw data |
 
-## Animating Over Time
+### Animating Over Time
 
 This is the feature that tends to get a reaction. Plotly can animate your chart across a column — like `year` — with a single argument:
 
@@ -144,7 +144,7 @@ Hit **Play** and watch 55 years of global development unfold. The `animation_gro
 > **Note:** Always fix `range_x` and `range_y` when animating — otherwise the axes rescale each frame, which makes trends hard to read.
 
 
-## Line Charts: Trends Over Time
+### Line Charts: Trends Over Time
 
 Animations are great for exploration, but for a written report you'll often want a cleaner time series. Here's how to compare life expectancy trajectories across a few countries:
 
