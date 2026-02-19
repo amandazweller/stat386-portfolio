@@ -75,5 +75,188 @@
     "title": "About Me",
     "section": "Contact",
     "text": "Contact\n\nEmail: azw22@byu.edu\nGitHub: github.com/amandazweller\nLinkedIn: linkedin.com/in/amandazwelelr\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "",
+    "text": "If you’ve been using matplotlib or seaborn for your data visualization, you already know the basics — but those libraries produce static images. You can’t hover to inspect a data point, zoom into a cluster, or toggle categories on and off without writing a lot of extra code.\nPlotly Express changes that. It’s a high-level Python library that wraps Plotly’s powerful graphing engine behind a simple, pandas-friendly API. The result: interactive charts that are ready to embed on a website or share as HTML files, with almost no extra effort.\nIn this tutorial, you’ll learn how to:\n\nInstall Plotly and load a dataset\nBuild an interactive scatter plot with color, bubble size, and hover tooltips\nAnimate your chart across time with a single argument\nCreate a line chart to compare trends across groups\nSave and embed an interactive chart in your GitHub Pages blog post"
+  },
+  {
+    "objectID": "projects/eda.html",
+    "href": "projects/eda.html",
+    "title": "EDA Project",
+    "section": "",
+    "text": "This is coming down the pipeline. Check again later.",
+    "crumbs": [
+      "EDA Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html",
+    "href": "projects/data-acquisition.html",
+    "title": "",
+    "section": "",
+    "text": "Code",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/final-project.html",
+    "href": "projects/final-project.html",
+    "title": "",
+    "section": "",
+    "text": "Code",
+    "crumbs": [
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects Overview",
+    "section": "",
+    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Find an interesting data source, collect the data, and prepare it for analysis.\n\n\n\nDescription: A comprehensive project that shows off my data science skills.",
+    "crumbs": [
+      "Projects Overview"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#all-projects",
+    "href": "projects/index.html#all-projects",
+    "title": "Projects Overview",
+    "section": "",
+    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Find an interesting data source, collect the data, and prepare it for analysis.\n\n\n\nDescription: A comprehensive project that shows off my data science skills.",
+    "crumbs": [
+      "Projects Overview"
+    ]
+  },
+  {
+    "objectID": "blog.html#introduction",
+    "href": "blog.html#introduction",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "",
+    "text": "Most introductory Python visualizations use matplotlib, which produces static images.\nWhile static plots are useful for homework assignments, they are limited when it comes to:\n\nexploring patterns in detail\n\nviewing exact data values\n\nsharing results on the web\n\nInteractive visualizations solve these problems by allowing users to:\n\nhover to see precise values\n\nzoom and pan across the data\n\nexplore multiple variables dynamically\n\nIn this tutorial, you will learn how to create and customize an interactive plot using Plotly and a simple dataset.\nBy the end, you will have a visualization that is ready to share in a portfolio or report."
+  },
+  {
+    "objectID": "blog.html#prerequisites-and-setup",
+    "href": "blog.html#prerequisites-and-setup",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Prerequisites and Setup",
+    "text": "Prerequisites and Setup\nThis tutorial assumes you are comfortable with:\n\nbasic Python syntax\n\nworking with pandas DataFrames\n\nFirst, install Plotly:\npip install plotly\n\n\n\n\n:::{#quarto-navigation-envelope .hidden}\n[Amanda Weller - Data Science Portfolio]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl\"}\n[Amanda Weller - Data Science Portfolio]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXItdGl0bGU=\"}\n[Home]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6SG9tZQ==\"}\n[/index.html]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6L2luZGV4Lmh0bWw=\"}\n[About Me]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6QWJvdXQgTWU=\"}\n[/about.html]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6L2Fib3V0Lmh0bWw=\"}\n[Blog]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6QmxvZw==\"}\n[/blog.html]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6L2Jsb2cuaHRtbA==\"}\n[Projects]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6UHJvamVjdHM=\"}\n[All Projects]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6QWxsIFByb2plY3Rz\"}\n[/projects/index.html]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6L3Byb2plY3RzL2luZGV4Lmh0bWw=\"}\n[---]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6LS0t\"}\n[Exploratory Data Analysis]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6RXhwbG9yYXRvcnkgRGF0YSBBbmFseXNpcw==\"}\n[/projects/eda.html]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6L3Byb2plY3RzL2VkYS5odG1s\"}\n[Data Acquisition]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6RGF0YSBBY3F1aXNpdGlvbg==\"}\n[/projects/data-acquisition.html]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6L3Byb2plY3RzL2RhdGEtYWNxdWlzaXRpb24uaHRtbA==\"}\n[Final Project]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6RmluYWwgUHJvamVjdA==\"}\n[/projects/final-project.html]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6L3Byb2plY3RzL2ZpbmFsLXByb2plY3QuaHRtbA==\"}\n[https://github.com/your-username]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6aHR0cHM6Ly9naXRodWIuY29tL3lvdXItdXNlcm5hbWU=\"}\n[https://linkedin.com/in/your-profile]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6aHR0cHM6Ly9saW5rZWRpbi5jb20vaW4veW91ci1wcm9maWxl\"}\n:::\n\n\n\n:::{#quarto-meta-markdown .hidden}\n[Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs – Amanda Weller - Data Science Portfolio]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLW1ldGF0aXRsZQ==\"}\n[Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs – Amanda Weller - Data Science Portfolio]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=\"}\n[Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs – Amanda Weller - Data Science Portfolio]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLW9nY2FyZHRpdGxl\"}\n[Amanda Weller - Data Science Portfolio]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLW1ldGFzaXRlbmFtZQ==\"}\n[Tutorial Blog]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==\"}\n[Tutorial Blog]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLW9nY2FyZGRkZXNj\"}\n:::\n\n\n\n\n&lt;!-- --&gt;\n\n::: {.quarto-embedded-source-code}\n```````````````````{.markdown shortcodes=\"false\"}\n---\nsubtitle: \"Tutorial Blog\"\ntitle: \"Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs\"\nformat: html\n---\n\n## Introduction\n\nMost introductory Python visualizations use **matplotlib**, which produces static images.  \nWhile static plots are useful for homework assignments, they are limited when it comes to:\n\n- exploring patterns in detail  \n- viewing exact data values  \n- sharing results on the web  \n\n**Interactive visualizations** solve these problems by allowing users to:\n\n- hover to see precise values  \n- zoom and pan across the data  \n- explore multiple variables dynamically  \n\nIn this tutorial, you will learn how to create and customize an **interactive plot using Plotly** and a simple dataset.  \nBy the end, you will have a visualization that is ready to share in a portfolio or report.\n\n---\n\n## Prerequisites and Setup\n\nThis tutorial assumes you are comfortable with:\n\n- basic Python syntax  \n- working with **pandas DataFrames**  \n\nFirst, install Plotly:\n\n```bash\npip install plotly\n:::"
+  },
+  {
+    "objectID": "blog.html#setup",
+    "href": "blog.html#setup",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Setup",
+    "text": "Setup\nThis tutorial assumes you are comfortable with:\n\nbasic Python syntax\n\nworking with pandas DataFrames\n\npip install plotly"
+  },
+  {
+    "objectID": "blog.html#load-and-understand-the-dataset",
+    "href": "blog.html#load-and-understand-the-dataset",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Load and Understand the Dataset",
+    "text": "Load and Understand the Dataset"
+  },
+  {
+    "objectID": "blog.html#create-your-first-interactive-plot",
+    "href": "blog.html#create-your-first-interactive-plot",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Create Your First Interactive Plot",
+    "text": "Create Your First Interactive Plot"
+  },
+  {
+    "objectID": "blog.html#customize-the-visualization",
+    "href": "blog.html#customize-the-visualization",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Customize the Visualization",
+    "text": "Customize the Visualization"
+  },
+  {
+    "objectID": "blog.html#add-an-advanced-interactive-feature",
+    "href": "blog.html#add-an-advanced-interactive-feature",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Add an Advanced Interactive Feature",
+    "text": "Add an Advanced Interactive Feature"
+  },
+  {
+    "objectID": "blog.html#save-and-share-the-interactive-plot",
+    "href": "blog.html#save-and-share-the-interactive-plot",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Save and Share the Interactive Plot",
+    "text": "Save and Share the Interactive Plot"
+  },
+  {
+    "objectID": "blog.html#conclusion-and-next-steps",
+    "href": "blog.html#conclusion-and-next-steps",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Conclusion and Next Steps",
+    "text": "Conclusion and Next Steps\nIf you already know pandas, Plotly Express will feel natural within minutes. The core payoff is that interactivity — hover, zoom, filter, animate — is built in from the start, so you spend less time fighting your visualization library and more time actually exploring your data.\nHere’s what to try next:\n\nRun these examples on your own dataset. Swap df for any pandas DataFrame — the API is identical.\nTry px.choropleth() if your data has a country or state column. Geographic interactivity is just as easy as everything above.\nExplore plotly.graph_objects when you need finer control — custom annotations, multi-axis layouts, or combining chart types on one figure.\nEmbed a chart in your portfolio. An interactive visualization tells a better story than a screenshot, and it immediately signals to a reader that you can both analyze and communicate data.\n\nThe Plotly Express documentation has a full gallery of examples — every one is runnable and easy to adapt to your own work."
+  },
+  {
+    "objectID": "blog.html#why-plotly",
+    "href": "blog.html#why-plotly",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "",
+    "text": "If you’ve been using matplotlib or seaborn for your data visualization, you already know the basics — but those libraries produce static images. You can’t hover to inspect a data point, zoom into a cluster, or toggle categories on and off without writing a lot of extra code.\nPlotly Express changes that. It’s a high-level Python library that wraps Plotly’s powerful graphing engine behind a simple, pandas-friendly API. The result: interactive charts that are ready to embed on a website or share as HTML files, with almost no extra effort.\nIn this tutorial, you’ll learn how to:\n\nInstall Plotly and load a dataset\nBuild an interactive scatter plot with color, bubble size, and hover tooltips\nAnimate your chart across time with a single argument\nCreate a line chart to compare trends across groups\nSave and embed an interactive chart in your GitHub Pages blog post"
+  },
+  {
+    "objectID": "blog.html#installation-and-setup",
+    "href": "blog.html#installation-and-setup",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Installation and Setup",
+    "text": "Installation and Setup\npip install plotly\nThat’s it. No extra configuration. We’ll use Plotly’s built-in gapminder dataset so you can follow along without downloading anything:\nimport plotly.express as px\n\ndf = px.data.gapminder()\nprint(df.head())\nThis dataset has GDP per capita, life expectancy, and population for countries worldwide from 1952 to 2007 — perfect for showing off what Plotly can do."
+  },
+  {
+    "objectID": "blog.html#your-first-chart-and-why-its-already-better",
+    "href": "blog.html#your-first-chart-and-why-its-already-better",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Your First Chart (and Why It’s Already Better)",
+    "text": "Your First Chart (and Why It’s Already Better)\nLet’s start with a simple scatter plot of GDP per capita vs. life expectancy for 2007:\nfig = px.scatter(\n    df[df[\"year\"] == 2007],\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    title=\"GDP vs. Life Expectancy (2007)\"\n)\n\nfig.show()\nThree lines. Same result as matplotlib — except now you can hover over any point to see its exact values, scroll to zoom, and click-drag to pan. No extra code."
+  },
+  {
+    "objectID": "blog.html#where-it-gets-interesting-adding-visual-layers",
+    "href": "blog.html#where-it-gets-interesting-adding-visual-layers",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Where It Gets Interesting: Adding Visual Layers",
+    "text": "Where It Gets Interesting: Adding Visual Layers\nHere’s where Plotly starts to pull ahead. Adding color, size, and hover labels is just a matter of extra arguments — and each one adds meaningful interactivity automatically.\nfig = px.scatter(\n    df[df[\"year\"] == 2007],\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",       # color-coded by continent\n    size=\"pop\",              # bubble size = population\n    hover_name=\"country\",    # country name appears on hover\n    log_x=True,              # log scale tames the GDP spread\n    title=\"GDP vs. Life Expectancy (2007)\",\n    labels={\n        \"gdpPercap\": \"GDP per Capita (USD)\",\n        \"lifeExp\": \"Life Expectancy (years)\"\n    }\n)\n\nfig.show()\nNow try clicking Africa in the legend — it toggles off entirely. Double-click a continent to isolate it. Hover over the largest bubble in Asia to confirm it’s China. All of that interactivity comes for free.\nHere’s what each new argument is doing:\n\n\n\n\n\n\n\n\nArgument\nWhat it does\nWhy it’s useful\n\n\n\n\ncolor=\"continent\"\nAssigns a unique color per category\nTurns the legend into an interactive filter\n\n\nsize=\"pop\"\nScales bubble area by population\nAdds a third data dimension visually\n\n\nhover_name=\"country\"\nPins country name to the tooltip\nInstantly identifies any outlier\n\n\nlog_x=True\nLog scale on the x-axis\nSpreads out low-GDP countries that get squished\n\n\nlabels={...}\nRenames axes from column names\nMakes the chart readable without editing raw data"
+  },
+  {
+    "objectID": "blog.html#animating-over-time",
+    "href": "blog.html#animating-over-time",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Animating Over Time",
+    "text": "Animating Over Time\nThis is the feature that tends to get a reaction. Plotly can animate your chart across a column — like year — with a single argument:\nfig = px.scatter(\n    df,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",\n    size=\"pop\",\n    hover_name=\"country\",\n    animation_frame=\"year\",    # adds a play button + year slider\n    animation_group=\"country\", # tracks each country between frames\n    log_x=True,\n    range_x=[200, 100000],     # fix axis range so it doesn't rescale\n    range_y=[25, 90],\n    title=\"GDP vs. Life Expectancy Over Time\"\n)\n\nfig.show()\n\n\nHit Play and watch 55 years of global development unfold. The animation_group argument tells Plotly which dots to track between frames so countries transition smoothly rather than jumping around.\n\nNote: Always fix range_x and range_y when animating — otherwise the axes rescale each frame, which makes trends hard to read."
+  },
+  {
+    "objectID": "blog.html#line-charts-trends-over-time",
+    "href": "blog.html#line-charts-trends-over-time",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Line Charts: Trends Over Time",
+    "text": "Line Charts: Trends Over Time\nAnimations are great for exploration, but for a written report you’ll often want a cleaner time series. Here’s how to compare life expectancy trajectories across a few countries:\ncountries = [\"United States\", \"China\", \"India\", \"Brazil\", \"Nigeria\"]\n\nfig = px.line(\n    df[df[\"country\"].isin(countries)],\n    x=\"year\",\n    y=\"lifeExp\",\n    color=\"country\",\n    markers=True,\n    title=\"Life Expectancy Over Time (Selected Countries)\",\n    labels={\"lifeExp\": \"Life Expectancy (years)\", \"year\": \"Year\"}\n)\n\nfig.show()\nmarkers=True adds a dot at each data point you can hover over individually. Click any country in the legend to hide it — useful when you want to isolate a specific comparison."
+  },
+  {
+    "objectID": "blog.html#saving-and-sharing-your-charts",
+    "href": "blog.html#saving-and-sharing-your-charts",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Saving and Sharing Your Charts",
+    "text": "Saving and Sharing Your Charts\nPlotly charts are HTML objects under the hood, which makes them easy to share in several ways depending on your needs.\nSave as an HTML file — anyone can open it in a browser, no Python required:\nfig.write_html(\"life_expectancy.html\")\nSave as a static image — useful for reports, slides, or anywhere you just need a PNG or PDF:\nfig.write_image(\"life_expectancy.png\")  # also supports .pdf, .svg, .jpeg\n\nNote: write_image() requires the kaleido package (pip install kaleido).\n\nShare interactively online — if you want a shareable link without any setup, Plotly Chart Studio lets you upload and share charts for free.\nEmbed in a website — save the chart as an .html file and embed it using an iframe:\n&lt;iframe\n  src=\"/life_expectancy.html\"\n  width=\"100%\"\n  height=\"500px\"\n  style=\"border:none;\"&gt;\n&lt;/iframe&gt;\nNo matter which route you take (except saving it as a static image), the chart stays fully interactive — hover, zoom, and filtering all work anywhere it’s displayed."
+  },
+  {
+    "objectID": "blog.html#plotly-express-at-a-glance",
+    "href": "blog.html#plotly-express-at-a-glance",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Plotly Express at a Glance",
+    "text": "Plotly Express at a Glance\nOnce you know the pattern — px.chart_type(df, x=, y=, color=, ...) — the rest of the library follows the same logic. Here are the most useful chart types to know:\n\n\n\n\n\n\n\n\nChart Type\nFunction\nBest For\n\n\n\n\nScatter\npx.scatter()\nRelationships between two numeric variables\n\n\nLine\npx.line()\nTrends over time\n\n\nBar\npx.bar()\nComparing categories\n\n\nHistogram\npx.histogram()\nDistribution of a single variable\n\n\nBox\npx.box()\nSpread and outliers by group\n\n\nChoropleth\npx.choropleth()\nGeographic data mapped by country or region"
+  },
+  {
+    "objectID": "blog.html#adding-visual-layers",
+    "href": "blog.html#adding-visual-layers",
+    "title": "Make Your Data Come Alive: A Beginner’s Guide to Plotly Interactive Graphs",
+    "section": "Adding Visual Layers",
+    "text": "Adding Visual Layers\nHere’s where Plotly starts to pull ahead. Adding color, size, and hover labels is just a matter of extra arguments — and each one adds meaningful interactivity automatically.\nfig = px.scatter(\n    df[df[\"year\"] == 2007],\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    color=\"continent\",       # color-coded by continent\n    size=\"pop\",              # bubble size = population\n    hover_name=\"country\",    # country name appears on hover\n    log_x=True,              # log scale tames the GDP spread\n    title=\"GDP vs. Life Expectancy (2007)\",\n    labels={\n        \"gdpPercap\": \"GDP per Capita (USD)\",\n        \"lifeExp\": \"Life Expectancy (years)\"\n    }\n)\n\nfig.show()\n\n\nNow try clicking Africa in the legend — it removes it from the graph entirely. Double-click a continent to isolate it. Hover over the largest bubble in Asia to confirm it’s China. All of that interactivity comes for free.\nHere’s what each new argument is doing:\n\n\n\n\n\n\n\n\nArgument\nWhat it does\nWhy it’s useful\n\n\n\n\ncolor=\"continent\"\nAssigns a unique color per category\nTurns the legend into an interactive filter\n\n\nsize=\"pop\"\nScales bubble area by population\nAdds a third data dimension visually\n\n\nhover_name=\"country\"\nPins country name to the tooltip\nInstantly identifies any outlier\n\n\nlog_x=True\nLog scale on the x-axis\nSpreads out low-GDP countries that get squished\n\n\nlabels={...}\nRenames axes from column names\nMakes the chart readable without editing raw data"
   }
 ]
