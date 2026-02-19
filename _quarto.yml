@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - "assets/*.html"
+    - "assets/photo.jpg"
 
 website:
   title: "Amanda Weller - Data Science Portfolio"
