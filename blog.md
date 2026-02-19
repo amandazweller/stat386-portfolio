@@ -23,12 +23,14 @@ In this tutorial, you'll learn how to:
 ## Installation and Setup
 
 ```bash
+# terminal
 pip install plotly
 ```
 
 That's it. No extra configuration. We'll use Plotly's built-in `gapminder` dataset so you can follow along without downloading anything:
 
 ```python
+# Python
 import plotly.express as px
 
 df = px.data.gapminder()
@@ -43,6 +45,7 @@ This dataset has GDP per capita, life expectancy, and population for countries w
 Let's start with a simple scatter plot of GDP per capita vs. life expectancy for 2007:
 
 ```python
+# Python
 fig = px.scatter(
     df[df["year"] == 2007],
     x="gdpPercap",
@@ -68,6 +71,7 @@ Three lines. Same result as matplotlib — except now you can hover over any poi
 Here's where Plotly starts to pull ahead. Adding color, size, and hover labels is just a matter of extra arguments — and each one adds meaningful interactivity automatically.
 
 ```python
+# Python
 fig = px.scatter(
     df[df["year"] == 2007],
     x="gdpPercap",
@@ -110,6 +114,7 @@ Here's what each new argument is doing:
 This is the feature that tends to get a reaction. Plotly can animate your chart across a column — like `year` — with a single argument:
 
 ```python
+# Python
 fig = px.scatter(
     df,
     x="gdpPercap",
@@ -144,6 +149,7 @@ Hit **Play** and watch 55 years of global development unfold. The `animation_gro
 Animations are great for exploration, but for a written report you'll often want a cleaner time series. Here's how to compare life expectancy trajectories across a few countries:
 
 ```python
+# Python
 countries = ["United States", "China", "India", "Brazil", "Nigeria"]
 
 fig = px.line(
@@ -176,12 +182,14 @@ Plotly charts are HTML objects under the hood, which makes them easy to share in
 **Save as an HTML file** — anyone can open it in a browser, no Python required:
 
 ```python
+# Python
 fig.write_html("life_expectancy.html")
 ```
 
 **Save as a static image** — useful for reports, slides, or anywhere you just need a PNG or PDF:
 
 ```python
+# Python
 fig.write_image("life_expectancy.png")  # also supports .pdf, .svg, .jpeg
 ```
 
@@ -192,6 +200,7 @@ fig.write_image("life_expectancy.png")  # also supports .pdf, .svg, .jpeg
 **Embed in a website** — save the chart as an `.html` file and embed it using an iframe:
 
 ```html
+<!-- HTML -->
 <iframe
   src="/life_expectancy.html"
   width="100%"
