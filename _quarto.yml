@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - "assets/*.html"
 
 website:
   title: "Amanda Weller - Data Science Portfolio"
