@@ -2,7 +2,7 @@
 title: "Welcome to My Data Science Portfolio"
 ---
 
-# Hello! I'm [Your Name] 👋
+# Hello! I'm Amanda Weller 👋
 
 Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you'll find projects that demonstrate what I've learned and discovered.
 
@@ -26,6 +26,11 @@ I built this site using [Quarto](https://quarto.org/) and host it on [GitHub Pag
 ## 📈 My Projects
 
 ::: {.grid}
+
+::: {.g-col-6}
+### [Plotly Tutorial Blog](blog.html)
+Learn how to make interactive charts using Plotly in Python.
+:::
 
 ::: {.g-col-6}
 ### [Data Exploration Project](projects/eda.qmd)
