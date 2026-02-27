@@ -25,6 +25,7 @@ I built this site using [Quarto](https://quarto.org/) and host it on [GitHub Pag
 
 ## 📈 My Projects
 
+
 ::: {.grid}
 
 ::: {.g-col-6}
