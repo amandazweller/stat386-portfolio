@@ -105,7 +105,107 @@
     "href": "projects/data-acquisition.html",
     "title": "Data Acquisition Project",
     "section": "",
-    "text": "This is coming down the pipeline. Check again later.",
+    "text": "The United States is home to an incredible variety of national parks and protected areas. From iconic landscapes like Yellowstone to historic landmarks and seashores, these parks offer a wide range of recreational opportunities and natural experiences. As someone who enjoys the outdoors, I was interested in learning more about what activities are available across different parks and how they vary from place to place.\nFor this project, I created a dataset using the API provided by the National Park Service. The API contains detailed information about parks in the United States, including their location, designation type, available activities, and other descriptive metadata. Using Python, I collected and curated this data into a dataset that can be used to explore patterns in recreation opportunities across parks.\nThis project demonstrates how APIs can be used to build original datasets for data science projects while also practicing good data curation and cleaning techniques.\n\n\n\n\nThe main question that motivated this project was:\nWhat types of recreational activities are most commonly offered across U.S. national parks, and how do these activities vary by park characteristics?\nIn particular, I was interested in exploring questions such as:\n\nHow many parks offer camping or fishing?\nAre wildlife-related activities common across most parks?\nDo certain types of parks (for example national parks vs historic sites) offer more outdoor recreation opportunities?\n\nTo begin exploring these questions, I created a dataset that summarizes activity availability and other park features.\n\n\n\n\nFor this project, I gathered data from the National Park Service developer API, which is publicly available through the\nNational Park Service.\nThe API documentation explicitly allows developers to request park data for educational and research purposes. Because the data is provided through an official API, there was no need to scrape websites or bypass restrictions. Instead, I followed recommended practices for API usage:\n\nRequested an API key from the National Park Service developer portal\nStored the API key securely using a .env file rather than including it directly in the code\nLimited requests to a small number of API calls\nFollowed the structure described in the API documentation\n\nSince the API is designed for public access and contains no personal or sensitive information, it is appropriate to use for this project.\n\n\n\n\nI collected the data using Python and the requests library to query the National Park Service API. The parks endpoint returns structured JSON data describing hundreds of parks across the United States.\nThe main steps to collect the dataset were:\n\nObtain an API key\nI requested a free API key from the National Park Service developer portal.\nStore the key securely\nThe key was stored in a .env file and loaded in Python using the python-dotenv package.\nQuery the parks endpoint\nUsing the requests library, I sent a request to the parks endpoint to retrieve all available park records.\nExtract relevant fields\nEach park entry contains nested information such as activities, topics, and fees. I extracted selected fields and transformed them into features that would be useful for analysis.\nConvert to a dataset\nThe collected records were converted into a pandas DataFrame and saved as a CSV file.\n\nStudents interested in building a similar dataset could follow these same steps using the API documentation and a simple Python script.\n\n\n\n\nThe final dataset contains information about parks managed by the National Park Service.\nDataset size\n\nRows (observations): ~400 parks\n\nColumns (features): 12 variables\n\nEach row represents a single park unit managed by the National Park Service.\n\n\nBelow is a summary of the variables included in the dataset.\n\n\n\n\n\n\n\nFeature\nDescription\n\n\n\n\npark_name\nFull name of the park\n\n\npark_code\nUnique identifier for the park\n\n\nstates\nState(s) where the park is located\n\n\ndesignation\nType of park (e.g., National Park, National Monument, Historic Site)\n\n\nlatitude\nGeographic latitude of the park\n\n\nlongitude\nGeographic longitude of the park\n\n\nnum_activities\nNumber of recreational activities listed for the park\n\n\nnum_topics\nNumber of thematic topics associated with the park\n\n\nnum_entrance_fees\nNumber of entrance fee options listed\n\n\ndescription_length\nLength of the park description text\n\n\nhas_camping\nIndicator for whether the park offers camping\n\n\nhas_fishing\nIndicator for whether the park offers fishing\n\n\nhas_wildlife\nIndicator for whether wildlife-related activities are present\n\n\nhas_biking\nIndicator for whether the park offers biking\n\n\nhas_boating\nIndicator for whether the park offers boating\n\n\n\nThese features allow for simple analysis of recreation opportunities and park characteristics.\n\n\n\n\n\nAlthough the API data was relatively clean, several processing steps were needed to prepare the dataset for analysis.\n\n\nSome variables such as latitude and longitude were returned as strings. These were converted to numeric values so they can be used for mapping or geographic analysis.\n\n\n\nSeveral variables were created by transforming nested API fields:\n\nnum_activities was calculated by counting the activities listed for each park\nnum_topics was calculated from the park’s associated topic list\nBoolean variables such as has_camping, has_fishing, and has_wildlife were created by checking whether those activities appeared in the park’s activity list\n\nThese transformations helped convert the raw API data into a structured dataset suitable for analysis.\n\n\n\nThe dataset was also checked for duplicate parks and missing values. A small number of records missing geographic coordinates were removed to ensure consistent data formatting.\n\n\n\n\n\nWhile the dataset is fairly comprehensive, there are several limitations worth noting.\nActivity representation\nActivities listed by the National Park Service may vary in specificity. For example, some parks may offer similar recreational opportunities but describe them differently.\nIncomplete metadata\nNot all parks include the same number of topics, images, or fees in the API data. This can lead to variation in the counts of these features.\nCoverage\nThe dataset includes units managed by the National Park Service, which includes national parks but also monuments, historic sites, seashores, and other designations.\nDespite these limitations, the dataset still provides a useful overview of park characteristics and recreation opportunities.\n\n\n\n\nStudents interested in building similar datasets may find the following resources helpful:\n\nNational Park Service Developer API\nRequests Python Library Documentation\nPandas Documentation\n\nThese tools make it relatively straightforward to collect and process structured data from APIs.\n\n\n\n\nAll code used to collect and process the data is available in the GitHub repository for this project:\nGitHub Repo:\nhttps://github.com/amandazweller/nationalparks\nThe repository includes:\n\nPython scripts used to query the API\nThe cleaned dataset\nDocumentation describing how to reproduce the data collection process\n\n\n\n\n\nThis project demonstrates how APIs can be used to build original datasets for data science projects. Using the National Park Service API, I created a dataset summarizing park characteristics and recreational opportunities across hundreds of parks in the United States.\nThe resulting dataset provides a foundation for exploring questions about how outdoor recreation varies across parks and how park characteristics relate to available activities. More broadly, the project illustrates how data scientists can combine APIs, Python, and data cleaning techniques to curate datasets that support meaningful analysis.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#introduction",
+    "href": "projects/data-acquisition.html#introduction",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "The United States is home to an incredible variety of national parks and protected areas. From iconic landscapes like Yellowstone to historic landmarks and seashores, these parks offer a wide range of recreational opportunities and natural experiences. As someone who enjoys the outdoors, I was interested in learning more about what activities are available across different parks and how they vary from place to place.\nFor this project, I created a dataset using the API provided by the National Park Service. The API contains detailed information about parks in the United States, including their location, designation type, available activities, and other descriptive metadata. Using Python, I collected and curated this data into a dataset that can be used to explore patterns in recreation opportunities across parks.\nThis project demonstrates how APIs can be used to build original datasets for data science projects while also practicing good data curation and cleaning techniques.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#motivating-question",
+    "href": "projects/data-acquisition.html#motivating-question",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "The main question that motivated this project was:\nWhat types of recreational activities are most commonly offered across U.S. national parks, and how do these activities vary by park characteristics?\nIn particular, I was interested in exploring questions such as:\n\nHow many parks offer camping or fishing?\nAre wildlife-related activities common across most parks?\nDo certain types of parks (for example national parks vs historic sites) offer more outdoor recreation opportunities?\n\nTo begin exploring these questions, I created a dataset that summarizes activity availability and other park features.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#ethical-data-collection",
+    "href": "projects/data-acquisition.html#ethical-data-collection",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "For this project, I gathered data from the National Park Service developer API, which is publicly available through the\nNational Park Service.\nThe API documentation explicitly allows developers to request park data for educational and research purposes. Because the data is provided through an official API, there was no need to scrape websites or bypass restrictions. Instead, I followed recommended practices for API usage:\n\nRequested an API key from the National Park Service developer portal\nStored the API key securely using a .env file rather than including it directly in the code\nLimited requests to a small number of API calls\nFollowed the structure described in the API documentation\n\nSince the API is designed for public access and contains no personal or sensitive information, it is appropriate to use for this project.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#collecting-the-data",
+    "href": "projects/data-acquisition.html#collecting-the-data",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "I collected the data using Python and the requests library to query the National Park Service API. The parks endpoint returns structured JSON data describing hundreds of parks across the United States.\nThe main steps to collect the dataset were:\n\nObtain an API key\nI requested a free API key from the National Park Service developer portal.\nStore the key securely\nThe key was stored in a .env file and loaded in Python using the python-dotenv package.\nQuery the parks endpoint\nUsing the requests library, I sent a request to the parks endpoint to retrieve all available park records.\nExtract relevant fields\nEach park entry contains nested information such as activities, topics, and fees. I extracted selected fields and transformed them into features that would be useful for analysis.\nConvert to a dataset\nThe collected records were converted into a pandas DataFrame and saved as a CSV file.\n\nStudents interested in building a similar dataset could follow these same steps using the API documentation and a simple Python script.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#overview-of-the-final-dataset",
+    "href": "projects/data-acquisition.html#overview-of-the-final-dataset",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "The final dataset contains information about parks managed by the National Park Service.\nDataset size\n\nRows (observations): ~400 parks\n\nColumns (features): 12 variables\n\nEach row represents a single park unit managed by the National Park Service.\n\n\nBelow is a summary of the variables included in the dataset.\n\n\n\n\n\n\n\nFeature\nDescription\n\n\n\n\npark_name\nFull name of the park\n\n\npark_code\nUnique identifier for the park\n\n\nstates\nState(s) where the park is located\n\n\ndesignation\nType of park (e.g., National Park, National Monument, Historic Site)\n\n\nlatitude\nGeographic latitude of the park\n\n\nlongitude\nGeographic longitude of the park\n\n\nnum_activities\nNumber of recreational activities listed for the park\n\n\nnum_topics\nNumber of thematic topics associated with the park\n\n\nnum_entrance_fees\nNumber of entrance fee options listed\n\n\ndescription_length\nLength of the park description text\n\n\nhas_camping\nIndicator for whether the park offers camping\n\n\nhas_fishing\nIndicator for whether the park offers fishing\n\n\nhas_wildlife\nIndicator for whether wildlife-related activities are present\n\n\nhas_biking\nIndicator for whether the park offers biking\n\n\nhas_boating\nIndicator for whether the park offers boating\n\n\n\nThese features allow for simple analysis of recreation opportunities and park characteristics.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#data-cleaning-and-transformations",
+    "href": "projects/data-acquisition.html#data-cleaning-and-transformations",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "Although the API data was relatively clean, several processing steps were needed to prepare the dataset for analysis.\n\n\nSome variables such as latitude and longitude were returned as strings. These were converted to numeric values so they can be used for mapping or geographic analysis.\n\n\n\nSeveral variables were created by transforming nested API fields:\n\nnum_activities was calculated by counting the activities listed for each park\nnum_topics was calculated from the park’s associated topic list\nBoolean variables such as has_camping, has_fishing, and has_wildlife were created by checking whether those activities appeared in the park’s activity list\n\nThese transformations helped convert the raw API data into a structured dataset suitable for analysis.\n\n\n\nThe dataset was also checked for duplicate parks and missing values. A small number of records missing geographic coordinates were removed to ensure consistent data formatting.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#data-quality-considerations",
+    "href": "projects/data-acquisition.html#data-quality-considerations",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "While the dataset is fairly comprehensive, there are several limitations worth noting.\nActivity representation\nActivities listed by the National Park Service may vary in specificity. For example, some parks may offer similar recreational opportunities but describe them differently.\nIncomplete metadata\nNot all parks include the same number of topics, images, or fees in the API data. This can lead to variation in the counts of these features.\nCoverage\nThe dataset includes units managed by the National Park Service, which includes national parks but also monuments, historic sites, seashores, and other designations.\nDespite these limitations, the dataset still provides a useful overview of park characteristics and recreation opportunities.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#resources-and-further-information",
+    "href": "projects/data-acquisition.html#resources-and-further-information",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "Students interested in building similar datasets may find the following resources helpful:\n\nNational Park Service Developer API\nRequests Python Library Documentation\nPandas Documentation\n\nThese tools make it relatively straightforward to collect and process structured data from APIs.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#github-repository",
+    "href": "projects/data-acquisition.html#github-repository",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "All code used to collect and process the data is available in the GitHub repository for this project:\nGitHub Repo:\nhttps://github.com/amandazweller/nationalparks\nThe repository includes:\n\nPython scripts used to query the API\nThe cleaned dataset\nDocumentation describing how to reproduce the data collection process",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#conclusion",
+    "href": "projects/data-acquisition.html#conclusion",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "This project demonstrates how APIs can be used to build original datasets for data science projects. Using the National Park Service API, I created a dataset summarizing park characteristics and recreational opportunities across hundreds of parks in the United States.\nThe resulting dataset provides a foundation for exploring questions about how outdoor recreation varies across parks and how park characteristics relate to available activities. More broadly, the project illustrates how data scientists can combine APIs, Python, and data cleaning techniques to curate datasets that support meaningful analysis.",
     "crumbs": [
       "Data Acquisition Project"
     ]
