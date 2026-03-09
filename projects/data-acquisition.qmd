@@ -181,7 +181,7 @@ These tools make it relatively straightforward to collect and process structured
 All code used to collect and process the data is available in the GitHub repository for this project:
 
 **GitHub Repo:**  
-https://github.com/amandazweller/nationalparks
+[National Parks Github Repository](https://github.com/amandazweller/nationalparks)
 
 The repository includes:
 
